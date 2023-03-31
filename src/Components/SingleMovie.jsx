@@ -55,7 +55,7 @@ const SingleMovie = ({ title, movies }) => {
       <h2>{title}</h2>
       <Slider {...settings}>
         {movies.map((movie) => (
-          <div key={movie.imdbID} className="movie-carousel-item">
+          <div key={movie.imdbID} className="movie-carousel-item d-flex">
             <img src={movie.Poster} alt={movie.Title} />
           </div>
         ))}
