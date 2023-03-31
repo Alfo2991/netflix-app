@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -50,12 +51,16 @@ const SingleMovie = ({ title, movies }) => {
     ],
   };
 
+  if (!movies) {
+    return <div>No movies found</div>;
+  }
+
   return (
-    <div className="movie-carousel">
+    <div className="movie-carousel ">
       <h2>{title}</h2>
-      <Slider {...settings}>
+      <Slider {...settings} >
         {movies.map((movie) => (
-          <div key={movie.imdbID} className="movie-carousel-item d-flex">
+          <div key={movie.imdbID} className="movie-carousel-item ">
             <img src={movie.Poster} alt={movie.Title} />
           </div>
         ))}

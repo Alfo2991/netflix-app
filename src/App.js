@@ -8,8 +8,8 @@ function App() {
     <>
       <Header />
       <MovieGallery title="Harry Potter" />
-      <MovieGallery title="Il Signore degli Anelli" />
-      <MovieGallery title="Guardiani della Galassia" />
+      <MovieGallery title="Lord of the Rings" />
+      <MovieGallery title="Guardians of the Galaxy" />
       <MyFooter />
     </>
   );
